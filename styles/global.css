@@ -25,6 +25,7 @@ html {
 }
 
 body {
+  display: flex;
   height: 100vh;
   background: var(--background);
 }
@@ -68,7 +69,6 @@ button, .button {
   display: flex;
   align-items: center;
   justify-content: center;
-
 
   background: var(--blue);
   color: var(--white);
