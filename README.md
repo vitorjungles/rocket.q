@@ -14,7 +14,7 @@
 
 ## Sobre
 
-:question: O Rocket.Q é uma aplicação em que os usuários enviam perguntas para salas específicas, onde as questões podem ser respondidas ou excluídas.
+:question: O Rocket.Q é uma aplicação em que usuários anônimos podem enviar perguntas para salas específicas, onde as questões podem ser respondidas ou excluídas por um gerenciador que tenha a senha da sala.
 
 ## Demo
 
@@ -22,7 +22,7 @@
 
 ## Tecnologias
 
-:gear: Esse projeto utiliza HTML, CSS, JS, NODEJS e SQL.
+:gear: Esse projeto utiliza HTML, CSS, JavaScript, NODEJS, EJS, Express e SQLite.
 
 ## Contribua
 
