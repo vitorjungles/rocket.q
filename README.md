@@ -1,26 +1,33 @@
-<p align="center">
-  <img src="assets/logo.svg" width="250" height="250">
-  <hr>
-</p>
+<div align="center">
+  <img src="assets/logo.svg" width="250" height="150" alt="Rocket.Q">
 
-<p align="center">
+  <a href="#sobre">Sobre</a> -
   <a href="#demo">Demo</a> -
   <a href="#tecnologias">Tecnologias</a> -
-  <a href="#licenca">Licença</a>
-</p>
+  <a href="#contribua">Contribua</a> -
+  <a href="#license">Licença</a>
 
-<div align="center">
-
-  > :rocket: Projeto desenvolvido durante a Next Level Week 6, realizada pela Rocketseat.
-
+  > :rocket: Projeto desenvolvido durante a Next Level Week 6, realizada pela Rocketseat
+  
+  <p>Made with :heart: by <a href="https://github.com/vitorjungles">Vítor Jungles</a></p>
 </div>
 
-<p align="center">Made with :heart: by <a href="https://github.com/vitorjungles">Vítor Jungles</a></p>
+## Sobre
+
+:question: O Rocket.Q é uma aplicação em que os usuários enviam perguntas para salas específicas, onde as questões podem ser respondidas ou excluídas.
+
+## Demo
+
+:computer: Demonstração do funcionamento da aplicação Rocket.Q.
 
 ## Tecnologias
 
-Esse projeto utiliza HTML, CSS, JS, NODEJS e SQL.
+:gear: Esse projeto utiliza HTML, CSS, JS, NODEJS e SQL.
 
-## Licença
+## Contribua
 
-Esse projeto foi desenvolvido sob a licença MIT.
+:heavy_check_mark: Para contribuir com o projeto, faça um fork desse repositório e mande suas modificações em um pull request.
+
+## License
+
+:pencil: Projeto desenvolvido sob a licença MIT.
