@@ -54,7 +54,7 @@ body, button, input, textarea {
   border-width: 0;
 }
 
-/*--------- input an buttons*/
+/*--------- input and buttons*/
 input, button, .button {
   border-radius: .8rem;
   height: 5rem;
