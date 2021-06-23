@@ -7,7 +7,7 @@
   <a href="#contribua">Contribua</a> -
   <a href="#license">Licença</a>
 
-  > :rocket: Projeto desenvolvido durante a Next Level Week 6, realizada pela Rocketseat
+  > :rocket: Projeto da trilha Discover desenvolvido durante a Next Level Week 6, realizada pela Rocketseat
   
   <p>Made with :heart: by <a href="https://github.com/vitorjungles">Vítor Jungles</a></p>
 </div>
