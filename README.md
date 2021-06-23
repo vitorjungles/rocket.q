@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/logo.svg" width="250" height="150" alt="Rocket.Q">
+  <img src="assets/logo.svg" width="250" height="150" alt="Rocket.Q" />
 
   <a href="#sobre">Sobre</a> -
   <a href="#demo">Demo</a> -
