@@ -30,4 +30,4 @@
 
 ## License
 
-:pencil: Projeto desenvolvido sob a licença MIT.
+:pencil: Projeto desenvolvido sob a licença MIT. Leia o arquivo [LICENSE](https://github.com/vitorjungles/rocket.q/blob/master/LICENSE) para mais informações.
