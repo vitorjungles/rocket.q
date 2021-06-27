@@ -41,18 +41,18 @@ module.exports = {
     const questionsRead = await db.all(`SELECT * FROM questions WHERE room = ${roomId} and read = 1`);
     let isNoQuestions;
 
-    if (questions.length == 0) {
-      if (questionsRead.length == 0) {
-        isNoQuestions = true;
-      };
+    if (questions.length == 0 && questionsRead.length == 0) {
+      isNoQuestions = true;
     };
 
     res.render('room', {roomId: roomId, questions: questions, questionsRead: questionsRead, isNoQuestions: isNoQuestions});
   },
 
-  enter(req, res) {
+  async enter(req, res) {
+    const db = await Database();
     const roomId = req.body.roomId;
+    const roomIdDb = await db.all(`SELECT id FROM rooms WHERE id = ${roomId}`);
 
-    res.redirect(`/room/${roomId}`);
+    roomIdDb.length == 0 ? res.redirect('no-room') : res.redirect(`/room/${roomId}`);
   }
 }
