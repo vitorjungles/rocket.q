@@ -1,4 +1,4 @@
-import Modal from './modal.js'
+import Modal from './modal.js';
 
 const modal = Modal();
 
@@ -33,7 +33,7 @@ function handleClick(event, check = true) {
   form.setAttribute('action', `/question/${roomId}/${questionId}/${slug}`);
 
   modalTitle.innerHTML = `${text} esta pergunta`;
-  modalDescription.innerHTML = `Tem certeza que deseja ${text.toLowerCase()} esta pergunta.`;
+  modalDescription.innerHTML = `Tem certeza que você deseja ${text.toLowerCase()} esta pergunta?`;
   modalButton.innerHTML = `Sim, ${text.toLowerCase()}`;
   check ? modalButton.classList.remove('red') : modalButton.classList.add('red');
   // Abrir modal

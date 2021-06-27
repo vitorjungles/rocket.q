@@ -9,7 +9,7 @@ module.exports = {
     while (isRoom) {
       /* Gera o número da sala */
       for (var i = 0; i < 6; i++) {
-        i == 0 ? roomId = Math.floor(Math.random() * 10).toString() :
+        i === 0 ? roomId = Math.floor(Math.random() * 10).toString() :
         roomId += Math.floor(Math.random() * 10).toString();
       };
 
@@ -41,7 +41,7 @@ module.exports = {
     const questionsRead = await db.all(`SELECT * FROM questions WHERE room = ${roomId} and read = 1`);
     let isNoQuestions;
 
-    if (questions.length == 0 && questionsRead.length == 0) {
+    if (questions.length === 0 && questionsRead.length === 0) {
       isNoQuestions = true;
     };
 
@@ -53,6 +53,6 @@ module.exports = {
     const roomId = req.body.roomId;
     const roomIdDb = await db.all(`SELECT id FROM rooms WHERE id = ${roomId}`);
 
-    roomIdDb.length == 0 ? res.redirect('no-room') : res.redirect(`/room/${roomId}`);
+    roomIdDb.length === 0 ? res.redirect('no-room') : res.redirect(`/room/${roomId}`);
   }
 }
