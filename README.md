@@ -51,7 +51,14 @@ $ npm start
 
 ## :gear: Tecnologias
 
-Esse projeto utiliza HTML, CSS, JavaScript, NodeJS, EJS, Express e SQLite.
+Esse projeto utiliza:
+- HTML
+- CSS
+- JavaScript
+- NodeJS
+- EJS
+- Express
+- SQLite
 
 ## :heavy_check_mark: Contribua
 
