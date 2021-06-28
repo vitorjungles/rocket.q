@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- View Port -->
+    <!-- VIEW PORT -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS -->
@@ -19,6 +19,7 @@
 
     <!-- SCRIPT -->
     <script src="/scripts/main.js" defer type="module"></script>
+    <script src="/scripts/dark-mode.js" defer type="text/javascript"></script>
   </head>
   <body>
     <div id="room" class="content">
@@ -35,6 +36,9 @@
             <img src="/images/users-white.svg" alt="Criar uma sala" />
             Criar sala
           </a>
+          <button class="dark-mode-button">
+            <div id="color-mode-img"></div>
+          </button>
         </div>
       </header>
 
@@ -120,7 +124,7 @@
 
         <form action="#" method="POST">
           <label class="sr-only" for-id="password">Digite sua senha admin</label>
-          <input type="password" id="password" name="password" placeholder="Digite sua senha">
+          <input type="password" id="password" name="password" placeholder="Digite sua senha" autocomplete="username new-password">
 
           <div class="buttons">
             <div class="button grey cancel">Cancelar</div>

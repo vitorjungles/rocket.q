@@ -12,7 +12,7 @@ html {
   --red: #E83F5B;
   --light-blue: #E0ECFF;
   --blue: #3485FF;
-  --background: #FBFCFF;
+  --white-background: #FBFCFF;
   --overlay: #040911;
   --icons-details: #A5B0C1;
 
@@ -28,15 +28,25 @@ html {
 body {
   display: flex;
   height: 100vh;
-  background: var(--background);
+}
+
+body.white-mode {
+  background: var(--white-background);
+}
+
+body.dark-mode {
+  background: #00000029;
+}
+
+body.transition, button.dark-mode-button #color-mode-img.transition {
+  transition: background .5s;
 }
 
 body, button, input, textarea {
-  /* intervalo de tamanho */
+  /* Intervalo de tamanho */
   font-size: clamp(14px, 1.6rem, 2vw);
 
   font-family: 'Open Sans', sans-serif;
-  /* font-family: 'Poppins', sans-serif; */
 }
 
 .content {
@@ -56,7 +66,7 @@ body, button, input, textarea {
   border-width: 0;
 }
 
-/*--------- input and buttons*/
+/*** Input and buttons ****/
 input, button, .button {
   border-radius: .8rem;
   height: 5rem;
@@ -83,35 +93,51 @@ button:hover, .button:hover {
   filter: brightness(1.2);
 }
 
-button > img,
-.button > img {
+button > img, .button > img {
   margin-right: 1rem;
   width: 2rem;
 }
 
-button.outlined,
-.button.outlined {
+button.dark-mode-button {
+  background: none;
+  width: 8rem;
+  z-index: 1;
+}
+
+button.dark-mode-button > #color-mode-img {
+  margin-right: 0;
+  width: 5rem;
+  height: 4rem;
+}
+
+button.dark-mode-button > #color-mode-img.dark-img {
+  background: url('/images/dark-mode.svg') no-repeat top/contain;
+}
+
+button.dark-mode-button > #color-mode-img.light-img {
+  background: url('/images/light-mode.svg') no-repeat top/contain;
+}
+
+button.outlined, .button.outlined {
   background: var(--white);
   color: var(--blue);
   border: .2rem solid var(--blue);
 }
 
-button.red,
-.button.red {
+button.red, .button.red {
   background: var(--red);
   color: var(--white);
 }
 
-button.grey,
-.button.grey {
+button.grey, .button.grey {
   background: var(--grey-light);
   color: var(--grey-dark);
 }
 
-
-/*** HEADER ****/
-
+/*** Header ****/
 .content header {
+  display: flex;
+  justify-content: space-between;
   width: 80%;
   margin: 3.5rem auto;
 }

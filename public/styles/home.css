@@ -42,6 +42,13 @@ input {
   border: .2rem solid var(--grey-blue);
   padding: 0 1.6rem;
   outline: none;
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 input, button, .button {
@@ -49,7 +56,7 @@ input, button, .button {
   margin-bottom: 1.8rem;
 }
 
-/* Separator Line */
+/*** Separator line ****/
 .separator {
   display: flex;
   align-items: center;
@@ -72,7 +79,7 @@ input, button, .button {
   height: 1px;
 }
 
-/*** create balls ***/
+/*** Balls ****/
 .ball {
   width: 21.2rem;
   height: 21.2rem;
