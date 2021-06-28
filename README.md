@@ -2,7 +2,7 @@
   <img src="public/images/logo.svg" width="250" height="150" alt="Rocket.Q" />
   <br>
   <img src="https://img.shields.io/github/repo-size/vitorjungles/rocket.q" alt="Repo size badge" />
-  <img src="https://img.shields.io/github/stars/vitorjungles/rocket.q" alt="Repo stars badge">
+  <img src="https://img.shields.io/github/stars/vitorjungles/rocket.q" alt="Repo stars badge" />
   <br>
   <br>
   <a href="#-sobre">Sobre</a> -
@@ -15,7 +15,7 @@
   <br>
 
   > :rocket: Projeto desenvolvido durante a Next Level Week 6 da trilha Discover, realizada pela Rocketseat
-  
+
   <p>Made with :heart: by <a href="https://github.com/vitorjungles">Vítor Jungles</a></p>
 </div>
 
