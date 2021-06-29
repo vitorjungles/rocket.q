@@ -1,8 +1,8 @@
 <div align="center">
   <img src="public/images/logo.svg" width="250" height="150" alt="Rocket.Q" />
   <br>
-  <img src="https://img.shields.io/github/repo-size/vitorjungles/rocket.q" alt="Repo size badge" />
-  <img src="https://img.shields.io/github/stars/vitorjungles/rocket.q" alt="Repo stars badge" />
+  <img src="https://img.shields.io/github/repo-size/vitorjungles/rocketq" alt="Repo size badge" />
+  <img src="https://img.shields.io/github/stars/vitorjungles/rocketq" alt="Repo stars badge" />
   <br>
   <br>
   <a href="#-sobre">Sobre</a> -
@@ -32,8 +32,8 @@ Demonstração do funcionamento da aplicação Rocket.Q.
 Clone o projeto e acesse a pasta.
 
 ```
-$ git clone https://github.com/vitorjungles/rocket.q.git
-$ cd rocket.q
+$ git clone https://github.com/vitorjungles/rocketq.git
+$ cd rocketq
 ```
 
 Siga as etapas abaixo:
@@ -66,4 +66,4 @@ Para contribuir com o projeto, faça um fork desse repositório e mande suas mod
 
 ## 📝 Licença
 
-Projeto desenvolvido sob a licença MIT. Leia o arquivo [LICENSE](https://github.com/vitorjungles/rocket.q/blob/master/LICENSE) para mais informações.
+Projeto desenvolvido sob a licença MIT. Leia o arquivo [LICENSE](https://github.com/vitorjungles/rocketq/blob/master/LICENSE) para mais informações.
