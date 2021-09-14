@@ -1,30 +1,25 @@
 function Dark() {
   const darkButton = document.querySelector('.dark-mode-button');
-  const body = document.querySelector('body');
   const darkButtonImg = document.querySelector('.dark-mode-button #color-mode-img');
+  const body = document.querySelector('body');
+  const buttonOutlined = document.querySelector('.button.outlined');
+  const input = document.querySelector('input');
   const isDark = localStorage.getItem('dark');
-
-  if (isDark === 'true') {
-    body.classList.add('dark-mode');
-    darkButtonImg.classList.add('light-img');
-    darkButton.addEventListener('click', off, {once: true});
-  } else {
-    body.classList.add('white-mode');
-    darkButtonImg.classList.add('dark-img');
-    darkButton.addEventListener('click', toggle, {once: true});
-  }
+  
+  body.classList.add(`${isDark === 'true' ? 'dark' : 'white'}-mode`);
+  darkButton.addEventListener('click', isDark === 'true' ? off : toggle, {once: true});
 
   function addTransition() {
     if (!body.className.includes('transition')) {
-      [body, darkButtonImg].forEach(element => {
-        element.classList.add('transition');
+      [body, darkButtonImg, buttonOutlined, input].forEach(element => {
+        if (element) {
+          element.classList.add('transition');
+        }
       });
     }
   }
 
   function toggle() {
-    darkButtonImg.classList.replace('dark-img', 'light-img');
-
     body.classList.replace('white-mode', 'dark-mode');
     addTransition();
 
@@ -33,8 +28,6 @@ function Dark() {
   }
 
   function off() {
-    darkButtonImg.classList.replace('light-img', 'dark-img');
-
     body.classList.replace('dark-mode', 'white-mode');
     addTransition();
 
