@@ -7,7 +7,7 @@ function Dark() {
   const isDark = localStorage.getItem('dark');
   
   body.classList.add(`${isDark === 'true' ? 'dark' : 'white'}-mode`);
-  darkButton.addEventListener('click', isDark === 'true' ? off : toggle, {once: true});
+  darkButton.addEventListener('click', (event) => handleClick(event));
 
   function addTransition() {
     if (!body.className.includes('transition')) {
@@ -19,20 +19,14 @@ function Dark() {
     }
   }
 
-  function toggle() {
-    body.classList.replace('white-mode', 'dark-mode');
+  function handleClick(event) {
+
+    console.log(body.classList[0] === 'white-mode' ? 'dark' : 'white')
+
+    body.classList.replace(body.classList[0], `${body.classList[0] === 'white-mode' ? 'dark' : 'white'}-mode`);
     addTransition();
 
-    darkButton.addEventListener('click', off, {once: true});
-    localStorage.setItem('dark', 'true');
-  }
-
-  function off() {
-    body.classList.replace('dark-mode', 'white-mode');
-    addTransition();
-
-    darkButton.addEventListener('click', toggle, {once: true});
-    localStorage.setItem('dark', 'false');
+    localStorage.setItem('dark', body.classList[0] === 'dark-mode' ? 'true' : 'false');
   }
 }
 
