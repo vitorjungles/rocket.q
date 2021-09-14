@@ -13,6 +13,7 @@ html {
   --light-blue: #E0ECFF;
   --blue: #3485FF;
   --white-background: #FBFCFF;
+  --dark-background: #00000029;
   --overlay: #040911;
   --icons-details: #A5B0C1;
 
@@ -35,7 +36,15 @@ body.white-mode {
 }
 
 body.dark-mode {
-  background: #00000029;
+  background: var(--dark-background);
+}
+
+body.white-mode button.dark-mode-button > #color-mode-img {
+  background: url('/images/dark-mode.svg') no-repeat top/contain;
+}
+
+body.dark-mode button.dark-mode-button > #color-mode-img {
+  background: url('/images/light-mode.svg') no-repeat top/contain;
 }
 
 body.transition, button.dark-mode-button #color-mode-img.transition {
@@ -72,6 +81,10 @@ input, button, .button {
   height: 5rem;
 }
 
+body.dark-mode input, body.dark-mode .button.outlined {
+  background: #f3f3f3;
+}
+
 button, .button {
   font-family: 'Poppins';
   font-weight: 500;
@@ -101,7 +114,7 @@ button > img, .button > img {
 button.dark-mode-button {
   background: none;
   width: 8rem;
-  z-index: 1;
+  position: sticky;
 }
 
 button.dark-mode-button > #color-mode-img {
@@ -110,21 +123,14 @@ button.dark-mode-button > #color-mode-img {
   height: 4rem;
 }
 
-button.dark-mode-button > #color-mode-img.dark-img {
-  background: url('/images/dark-mode.svg') no-repeat top/contain;
-}
-
-button.dark-mode-button > #color-mode-img.light-img {
-  background: url('/images/light-mode.svg') no-repeat top/contain;
-}
-
 button.outlined, .button.outlined {
   background: var(--white);
   color: var(--blue);
   border: .2rem solid var(--blue);
 }
 
-button.red, .button.red {
+button
+.red, .button.red {
   background: var(--red);
   color: var(--white);
 }
