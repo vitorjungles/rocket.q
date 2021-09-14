@@ -20,9 +20,6 @@ function Dark() {
   }
 
   function handleClick(event) {
-
-    console.log(body.classList[0] === 'white-mode' ? 'dark' : 'white')
-
     body.classList.replace(body.classList[0], `${body.classList[0] === 'white-mode' ? 'dark' : 'white'}-mode`);
     addTransition();
 

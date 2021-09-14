@@ -114,7 +114,8 @@ button > img, .button > img {
 button.dark-mode-button {
   background: none;
   width: 8rem;
-  position: sticky;
+  margin-bottom: 0;
+  z-index: 1;
 }
 
 button.dark-mode-button > #color-mode-img {
